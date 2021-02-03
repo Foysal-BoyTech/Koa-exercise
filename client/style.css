@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+#chatContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 60% 30%;
+    column-gap: 2px;
+    row-gap: 2px;
+    font-size: 20px;
+    width: 90vw;
+    height: 90vh;
+    color: black;
+    background: #bde0fe;
+
+    /* border-radius: 10px; */
+}
+#header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+}
+#conversationList {
+    grid-column: 1 / 1;
+    grid-row: 2 / 4;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+#ourMessages {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    background-color: #00B4D8;
+    overflow: scroll;
+    border-radius: 9px;
+
+}
+#newMessage {
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+    background-color: #CAF0F8;
+    border-radius: 10px;
+}
+.newMessageStyle {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px 50px;
+    font-family: 'Tahoma';
+
+}
+
+.userMessage {
+    background-color: lightcoral;
+}
+
+.apiMessage {
+    background-color: #06d6a0;
+}
+
+#message {
+    margin-top: 10px;
+    width: 80%;
+    height: 90%;
+    background-color: #90E0EF;
+    border-radius: 50px 1px;
+}
+
+#send {
+    height: 90%;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 15%;
+    border-radius: 30px;
+}
+
+.time {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: monospace;
+}
